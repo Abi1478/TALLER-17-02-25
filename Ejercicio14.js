@@ -1,3 +1,4 @@
+function jugar(){
 function calcularCostoSandwich() {
     let tamaño = prompt("¿Desea un sandwich pequeño o grande?").toLowerCase();
     let costoTamaño = (tamaño === "grande") ? 12000 : 6000;
@@ -22,3 +23,23 @@ function calcularCostoSandwich() {
 }
 
 calcularCostoSandwich();
+
+}
+
+jugar();
+let opcion;
+let continuar = true;
+while (continuar) {
+    opcion = Number(prompt("¿Qué desea hacer? (1) Jugar de nuevo (2) Volver al menú:"));
+    switch (opcion) {
+        case 1:
+            jugar();
+            break;
+        case 2:
+            window.location.href = "index.html";
+            continuar = false;
+            break;
+        default:
+            alert("Opción no válida. Intente de nuevo.")
+    }
+}
