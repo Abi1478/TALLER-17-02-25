@@ -1,0 +1,14 @@
+let nombreCliente = prompt("Ingrese su nombre");
+let dias = Number(prompt("Ingrese la cantidad de días que desea entrenar (15 - 30 - 90 (3 meses))"));
+let costo;
+
+if(dias === 15) {
+    costo = 18000;
+    alert(`Señor/a ${nombreCliente} el costo del gimnasio por entrenar ${dias} días es: $${costo}`);
+} else if(dias === 30) {
+    costo = 35000;
+    alert(`Señor/a ${nombreCliente} el costo del gimnasio por entrenar ${dias} días es: $${costo}`);
+} else if(dias === 90) {
+    costo = 86000;
+    alert(`Señor/a ${nombreCliente} el costo del gimnasio por entrenar ${dias} días es: $${costo}`);
+}
