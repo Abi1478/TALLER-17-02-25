@@ -24,7 +24,7 @@ jugar();
 let opcion;
 let continuar = true;
 while (continuar) {
-    opcion = Number(prompt("¿Qué desea hacer? (1) Jugar de nuevo (2) Volver al menú:"));
+    opcion = Number(prompt("¿Qué desea hacer? (1) Intentarlo de nuevo (2) Volver al menú:"));
     switch (opcion) {
         case 1:
             jugar();
