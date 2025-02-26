@@ -1,6 +1,5 @@
-function jugar(){
-let copias = Number(prompt("Ingrese la cantidad de copias que desea imprimir"));
-let precioPorCopia;
+function calcularPrecioCopia(copias) {
+    let precioPorCopia;
 
 if(copias < 500) {
     precioPorCopia = 120;
@@ -11,6 +10,13 @@ if(copias < 500) {
 } else {
     precioPorCopia = 50;
 }
+
+return precioPorCopia;
+}
+
+function jugar(){
+let copias = Number(prompt("Ingrese la cantidad de copias que desea imprimir"));
+let precioPorCopia = calcularPrecioCopia(copias)
 
 let precioTotal = copias*precioPorCopia;
 alert(`Precio por copia: $${precioPorCopia}. Costo total $${precioTotal}`);
